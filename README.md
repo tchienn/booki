@@ -1,4 +1,4 @@
 # Booki
 
-A static booking website for accommodation and experiences. An integration project using HTML and CSS, made for OpenClassrooms Web Development path. 
+A static booking website for accommodation and experiences. I integrated mock-up designs using HTML and CSS as a project for the OpenClassrooms Web Development path. 
 
