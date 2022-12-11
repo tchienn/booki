@@ -4,7 +4,7 @@ A static booking website for accommodation and experiences. I integrated mock-up
 
 ## To view the project
 
-<!-- To view the project quickly, visit my GitHub website here: https://tchienn.github.io/ohmyfood_menu_app/ -->
+To view the project quickly, visit my GitHub website here: https://tchienn.github.io/booki_accommodation_website/
 
 Otherwise, clone the project with the following command:
 
