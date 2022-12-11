@@ -42,10 +42,6 @@ img {
     align-items: center;
 }
 
-.header > * {
-    flex-basis: 45%;
-}
-
 .logo-pc {
     width: 100px;
 }
@@ -63,7 +59,7 @@ img {
 }
 
 .nav-list-item {
-    padding: 55px 0;
+    padding: 55px 15px;
     border-top: 2.5px solid transparent;
 }
 
@@ -76,7 +72,7 @@ img {
 }
 
 .nav-list-item:nth-child(2) {
-    padding: 55px 0 0 10%;
+    padding: 55px 35px;
 }
 
 @media screen and (max-width: 768px) {
