@@ -1,5 +1,5 @@
 /* IMPORTS */
-@import "./normalize.css";
+@import './normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* GLOBAL */
@@ -9,7 +9,9 @@
     --tertiary-color: #f2f2f2;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,7 +86,7 @@ img {
     .logo-pc {
         display: none;
     }
-    
+
     .logo-mobile {
         display: block;
         margin-top: 20px;
@@ -100,14 +102,14 @@ img {
         justify-content: center;
         margin: 0;
     }
-    
+
     .nav-list-item {
         flex-basis: 50%;
-        padding: 9% 0 4% 2%;
+        padding: 9% 0 4% 7%;
         border-top: none;
         border-bottom: 5px solid var(--tertiary-color);
         text-align: center;
-        font-size: 26px;
+        font-size: 24px;
         overflow-x: visible;
     }
 
@@ -150,16 +152,15 @@ form.search-bar .search-location {
     cursor: pointer;
 }
 
-form.search-bar input[type=text] {
+form.search-bar input[type='text'] {
     border: 2px solid var(--tertiary-color);
     background: transparent;
     width: 16%;
     padding-left: 15px;
     font-weight: 600;
     font-size: 18px;
-    color: #000;
 }
-  
+
 form.search-bar button {
     padding: 15px;
     background: var(--primary-color);
@@ -177,15 +178,15 @@ form.search-bar button {
 
 .btn-text {
     position: relative;
-    top: 1.5px; 
+    top: 1.5px;
 }
-  
+
 form.search-bar button:hover {
     filter: brightness(1.2);
 }
 
 @media screen and (max-width: 1200px) {
-    form.search-bar input[type=text] {
+    form.search-bar input[type='text'] {
         width: 28%;
     }
 }
@@ -210,17 +211,15 @@ form.search-bar button:hover {
     }
 
     form.search-bar .search-location {
-        padding: 24px 30px 15px 30px;
-        border-radius: 22px 0 0 22px;
-        font-size: 28px;
-        text-align: center;
+        display: none;
     }
 
-    form.search-bar input[type=text] {
-        padding-left: 20px;
+    form.search-bar input[type='text'] {
         height: 80px;
         width: 65%;
         font-size: 32px;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
     }
 
     form.search-bar button {
@@ -228,12 +227,12 @@ form.search-bar button:hover {
         right: 15px;
         border-radius: 22px;
         font-weight: 600;
-        width: 75px;
+        width: 72px;
     }
 
     .fa-magnifying-glass:before {
         display: block;
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .btn-text {
@@ -287,7 +286,7 @@ form.search-bar button:hover {
     color: var(--primary-color);
 }
 
-.filter-bar:hover .filter-icon{
+.filter-bar:hover .filter-icon {
     border-color: var(--primary-color);
 }
 
@@ -361,17 +360,16 @@ form.search-bar button:hover {
     }
 
     .info-icon {
-        padding: 10px 15px 15px 15px;
-        width: 40px;
-        height: 40px;
-        border-radius: 40px;
+        padding: 3rem 2rem;
+        font-size: 1.5rem;
+        border: none;
     }
-    
+
     .info-description {
         font-size: 26px;
         line-height: 32px;
     }
-}  
+}
 /* END FILTERS SECTION */
 
 /* MAIN SECTION  */
@@ -435,7 +433,7 @@ form.search-bar button:hover {
 }
 
 .accommodation-card-heading {
-    margin: 2% 0 2% 5%; 
+    margin: 2% 0 2% 5%;
     font-weight: 600;
     font-size: 16px;
 }
@@ -447,7 +445,7 @@ form.search-bar button:hover {
 }
 
 .accommodation-card-rating {
-    margin-left: 5%; 
+    margin-left: 5%;
     color: #dbdada;
 }
 
@@ -457,7 +455,7 @@ form.search-bar button:hover {
 }
 
 .rating--grey {
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 .show-more {
@@ -480,7 +478,7 @@ form.search-bar button:hover {
     .accommodation {
         width: 100%;
     }
-    
+
     .accomodation-container {
         padding: 30px 0 30px 0;
     }
@@ -488,13 +486,13 @@ form.search-bar button:hover {
     .accommodation-card:hover {
         background-color: var(--secondary-color);
     }
-    
+
     .accommodation-card-img {
         height: 110px;
     }
-    
+
     .accommodation-card-heading {
-        margin: 2% 0 2% 5%; 
+        margin: 2% 0 2% 5%;
         font-weight: 600;
         font-size: 16px;
     }
@@ -528,11 +526,11 @@ form.search-bar button:hover {
     .accommodation-card {
         border-radius: 30px;
         margin: 0 1% 0.01% 0;
-        padding: 1%;
+        padding: 3%;
         width: 98%;
         height: 330px;
     }
-    
+
     .accommodation-card-img {
         border-top-right-radius: 25px;
         border-top-left-radius: 25px;
@@ -540,25 +538,25 @@ form.search-bar button:hover {
     }
 
     .accommodation-card-heading {
-        margin: 2% 0 1% 2%; 
+        margin: 2% 0 2% 2%;
         font-size: 26px;
     }
 
     .accommodation-card-info {
-        margin: 0 0 2.5% 2%;
+        margin: 3% 0 3.5% 2%;
         font-weight: 300;
         font-size: 24px;
     }
 
     .accommodation-card-rating {
-        margin-left: 2%; 
+        margin-left: 2%;
     }
 
     .show-more {
         margin-top: 30px;
         font-size: 28px;
-    } 
-} 
+    }
+}
 /* END ACCOMMODATION SECTION */
 
 /* POPULAR SECTION */
@@ -580,7 +578,6 @@ form.search-bar button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
     font-weight: 600;
     font-size: 22px;
 }
@@ -594,10 +591,10 @@ form.search-bar button:hover {
     flex-direction: row;
     border-radius: 20px;
     background-color: #fff;
-    margin: 7% 3% 2% 0;
-    padding: 1.2%;
-    width: 97%;
-    height: 145px;
+    /* margin: 7% 3% 2% 0; */
+    padding: 0.8rem;
+    /* width: 97%; */
+    /* height: 145px; */
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.1));
 }
 
@@ -609,6 +606,7 @@ form.search-bar button:hover {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 35%;
+    height: auto;
 }
 
 .popular-card-info {
@@ -641,7 +639,7 @@ form.search-bar button:hover {
     .popular-card-description {
         margin: 3% 0 10% 10%;
     }
-    
+
     #popular-card-description-single {
         margin-top: 10px;
     }
@@ -655,31 +653,31 @@ form.search-bar button:hover {
     .popular-heading-container {
         justify-content: space-between;
     }
-    
+
     .popular-card {
         margin: 4% 0 2% 0;
         width: 100%;
         height: 250px;
     }
-    
+
     .popular-card:hover {
         background-color: var(--secondary-color);
     }
-    
+
     .popular-card-img {
         width: 50%;
     }
-    
+
     .popular-card-info {
         width: 45%;
         padding-top: 3%;
     }
-    
+
     .popular-card-heading {
         margin-left: 10%;
         font-size: 26px;
     }
-    
+
     .popular-card-description {
         margin: 3% 0 4% 10%;
         font-size: 24px;
@@ -709,39 +707,32 @@ form.search-bar button:hover {
     i.fa-solid.fa-star::before {
         font-size: 32px;
     }
-    
+
     .popular-card {
         border-radius: 30px;
-        margin: 3.5% 3% 0 0;
-        padding: 1.5%;
+        padding: 0.7rem;
         width: 95%;
-        height: 240px;
     }
-    
+
     .popular-card-img {
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
-        width: 40%;
+        width: 45%;
     }
-    
+
     .popular-card-info {
         padding-top: 1%;
         width: 55%;
     }
-    
+
     .popular-card-heading {
-        margin: 1% 0 0.5% 10%;
-        font-size: 26px;
-        line-height: 32px;
-    }
-    
-    .popular-card-description {
-        margin: 3% 0 24% 10%;
-        font-size: 24px;
+        font-size: 20px;
     }
 
-    #popular-card-description-single {
-        margin-top: 45px;
+    .popular-card-description {
+        font-size: 18px;
+        line-height: 2rem;
+        padding: 1rem 0;
     }
 
     .rating--blue.fa-solid.fa-star::before {
@@ -757,7 +748,7 @@ form.search-bar button:hover {
 
 /* ACTIVITIES SECTION */
 .activities-heading {
-    margin: 2% 0 0 3%; 
+    padding: 2% 0 0 5%;
     font-weight: 600;
     font-size: 22px;
 }
@@ -856,7 +847,7 @@ form.search-bar button:hover {
     .activity-card-long-heading {
         padding: 5%;
     }
-    
+
     .activity-card-short-container {
         display: flex;
         flex-flow: column nowrap;
@@ -864,7 +855,7 @@ form.search-bar button:hover {
         width: 22%;
         overflow: visible;
     }
-    
+
     .activity-card-short {
         border-radius: 20px;
         background-color: #fff;
@@ -873,16 +864,16 @@ form.search-bar button:hover {
         filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.1));
         overflow-y: hidden;
     }
-    
+
     .activity-card-short:hover {
         background-color: var(--secondary-color);
     }
-    
+
     .activity-card-short-img {
         height: 70%;
         width: 100%;
     }
-    
+
     .activity-card-short-heading {
         padding: 5%;
         font-weight: 600;
@@ -904,23 +895,23 @@ form.search-bar button:hover {
     .activity-card-long-img {
         height: 70%;
     }
-    
+
     .activity-card-long-heading {
         text-align: center;
         font-size: 24px;
     }
-    
+
     .activity-card-short-container {
         flex-flow: column nowrap;
         align-items: center;
         width: 100%;
     }
-    
+
     .activity-card-short {
         height: 350px;
         width: 100%;
     }
-    
+
     .activity-card-short-heading {
         text-align: center;
         font-size: 24px;
@@ -930,7 +921,7 @@ form.search-bar button:hover {
 @media screen and (max-width: 768px) {
     .activities-heading {
         text-align: start;
-        margin: 10% 0 7% 5%; 
+        margin: 10% 0 7% 5%;
         font-size: 36px;
     }
 
@@ -986,24 +977,32 @@ form.search-bar button:hover {
     flex-basis: 33.33%;
 }
 
-.about-heading, .our-accommodations-heading, .assistance-heading {
+.about-heading,
+.our-accommodations-heading,
+.assistance-heading {
     margin: 10px 0 15px 0;
     font-weight: 600;
     font-size: 18px;
 }
 
-.about-nav-list, .our-accommodations-nav-list, .assistance-nav-list {
+.about-nav-list,
+.our-accommodations-nav-list,
+.assistance-nav-list {
     margin-top: 10px;
 }
 
-.about-nav-list-item, .our-accommodations-nav-list-item, .assistance-nav-list-item {
+.about-nav-list-item,
+.our-accommodations-nav-list-item,
+.assistance-nav-list-item {
     line-height: 30px;
     font-weight: 200;
     font-size: 16px;
 }
 
-.about-nav-list-item:hover, .our-accommodations-nav-list-item:hover, .assistance-nav-list-item:hover {
-    color: var(--primary-color)
+.about-nav-list-item:hover,
+.our-accommodations-nav-list-item:hover,
+.assistance-nav-list-item:hover {
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -1012,21 +1011,29 @@ form.search-bar button:hover {
         padding-bottom: 0;
     }
 
-    .about, .our-accommodations, .assistance {
+    .about,
+    .our-accommodations,
+    .assistance {
         margin-bottom: 20px;
     }
 
-    .about-heading, .our-accommodations-heading, .assistance-heading {
+    .about-heading,
+    .our-accommodations-heading,
+    .assistance-heading {
         margin: 30px 0 20px 0;
         font-weight: 700;
         font-size: 30px;
     }
 
-    .about-nav-list, .our-accommodations-nav-list, .assistance-nav-list {
+    .about-nav-list,
+    .our-accommodations-nav-list,
+    .assistance-nav-list {
         margin-bottom: 10px;
     }
-    
-    .about-nav-list-item, .our-accommodations-nav-list-item, .assistance-nav-list-item {
+
+    .about-nav-list-item,
+    .our-accommodations-nav-list-item,
+    .assistance-nav-list-item {
         line-height: 50px;
         font-weight: 300;
         font-size: 26px;
